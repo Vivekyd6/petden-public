@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Petden</title>
+<meta name="description" content="Petden privacy policy. No data collected, no network access, no analytics. Everything stays on your device.">
+<meta name="theme-color" content="#2D5F3F">
+
+<style>
+  :root {
+    --primary: #2D5F3F;
+    --primary-deep: #1A3D26;
+    --primary-muted: #DCEBE0;
+    --backdrop: #FAFAF7;
+    --backdrop-deep: #F1EFEA;
+    --surface: #FFFFFF;
+    --border: #DDE3DA;
+    --border-strong: #C4CABE;
+    --text-primary: #1A1F1B;
+    --text-secondary: #43473F;
+    --text-muted: #74807A;
+    --success: #1B7A4E;
+    --info: #2D5F3F;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--backdrop);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto,
+                 "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-deep) 100%);
+    color: #fff;
+    padding: 48px 24px 56px;
+  }
+
+  .hero-inner {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.18);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #E2F0E5;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+
+  .brand-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #8FE2B8;
+    box-shadow: 0 0 0 4px rgba(143,226,184,0.18);
+  }
+
+  h1.hero-title {
+    margin: 22px 0 8px;
+    font-size: 38px;
+    line-height: 1.15;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .hero-sub {
+    margin: 0;
+    font-size: 17px;
+    color: #CFDCD2;
+    max-width: 560px;
+  }
+
+  .meta {
+    margin-top: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    font-size: 13px;
+    color: #A6B6A9;
+  }
+
+  .meta strong {
+    color: #fff;
+    font-weight: 600;
+  }
+
+  main {
+    max-width: 760px;
+    margin: -28px auto 64px;
+    padding: 0 20px;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow:
+      0 1px 2px rgba(45,95,63,0.04),
+      0 14px 40px rgba(45,95,63,0.06);
+    overflow: hidden;
+  }
+
+  .summary {
+    background: var(--primary-muted);
+    border-bottom: 1px solid var(--border);
+    padding: 22px 28px;
+  }
+
+  .summary-title {
+    margin: 0 0 12px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary-deep);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .summary-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+    border-bottom: 1px dashed rgba(45,95,63,0.18);
+    font-size: 15px;
+  }
+
+  .summary-row:last-child { border-bottom: 0; }
+
+  .summary-row .q { color: var(--primary-deep); font-weight: 500; }
+  .summary-row .a {
+    font-weight: 700;
+    color: var(--primary);
+    white-space: nowrap;
+  }
+
+  .body {
+    padding: 28px 28px 32px;
+  }
+
+  h2 {
+    margin: 32px 0 10px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--primary-deep);
+    scroll-margin-top: 16px;
+  }
+
+  h2:first-child { margin-top: 4px; }
+
+  h3 {
+    margin: 22px 0 8px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--primary);
+  }
+
+  p { margin: 10px 0; color: var(--text-secondary); }
+
+  p strong, li strong { color: var(--text-primary); }
+
+  ul {
+    padding-left: 22px;
+    margin: 10px 0;
+  }
+
+  li { margin: 6px 0; color: var(--text-secondary); }
+
+  a {
+    color: var(--info);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(45,95,63,0.4);
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+
+  a:hover {
+    color: var(--primary-deep);
+    border-bottom-color: var(--primary-deep);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 14.5px;
+    background: var(--surface);
+  }
+
+  th, td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  th {
+    background: var(--backdrop-deep);
+    color: var(--primary-deep);
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  tr:last-child td { border-bottom: 0; }
+
+  code {
+    background: var(--backdrop-deep);
+    border: 1px solid var(--border);
+    padding: 1px 6px;
+    border-radius: 5px;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.9em;
+    color: var(--primary-deep);
+  }
+
+  pre {
+    background: var(--backdrop-deep);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 16px;
+    overflow-x: auto;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--primary-deep);
+    margin: 14px 0;
+  }
+
+  pre code {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    font-size: inherit;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 28px 0;
+  }
+
+  .contact {
+    margin-top: 24px;
+    padding: 20px 22px;
+    background: var(--backdrop-deep);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+  }
+
+  .contact h2 { margin-top: 0; }
+
+  .contact-email {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 10px 18px;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 999px;
+    font-weight: 600;
+    border: 0;
+  }
+
+  .contact-email:hover {
+    background: var(--primary-deep);
+    color: #fff;
+    border: 0;
+  }
+
+  footer {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 13px;
+    margin: 28px 0 0;
+  }
+
+  /* Tablet + desktop tweaks */
+  @media (min-width: 720px) {
+    .hero { padding: 64px 24px 80px; }
+    h1.hero-title { font-size: 46px; }
+    .summary-grid { grid-template-columns: 1fr 1fr; gap: 6px 28px; }
+    main { margin-top: -44px; }
+    .body { padding: 36px 40px 40px; }
+    .summary { padding: 26px 40px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    a { transition: none; }
+  }
+</style>
+</head>
+
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <span class="brand"><span class="brand-dot"></span>Petden</span>
+    <h1 class="hero-title">Privacy Policy</h1>
+    <p class="hero-sub">
+      Petden is built so that <strong style="color:#fff;">no personal data ever
+      leaves your device</strong>. This page explains, in plain language, what the
+      app does and does not handle.
+    </p>
+    <div class="meta">
+      <span><strong>Last updated:</strong> 11 May 2026</span>
+      <span><strong>Effective date:</strong> 11 May 2026</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <article class="card">
+    <section class="summary">
+      <div class="summary-title">At a glance</div>
+      <div class="summary-grid">
+        <div class="summary-row">
+          <span class="q">Personal data collected?</span>
+          <span class="a">No</span>
+        </div>
+        <div class="summary-row">
+          <span class="q">Sends data over the internet?</span>
+          <span class="a">No</span>
+        </div>
+        <div class="summary-row">
+          <span class="q">Analytics or advertising?</span>
+          <span class="a">No</span>
+        </div>
+        <div class="summary-row">
+          <span class="q">Shared with third parties?</span>
+          <span class="a">No</span>
+        </div>
+        <div class="summary-row">
+          <span class="q">Requires an account?</span>
+          <span class="a">No</span>
+        </div>
+        <div class="summary-row">
+          <span class="q">Uploads your pet's photos?</span>
+          <span class="a">No</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="body">
+
+      <h2 id="what-the-app-does">1. What the app does</h2>
+      <p>
+        Petden is a privacy-first pet health tracker. You record your pet's
+        vaccinations, medications, vet visits, weight, symptoms, and reminders
+        inside the app. Every record stays on the device you typed it into.
+      </p>
+      <p>
+        Pro features (PDF export, encrypted backup, advanced reminders, themes,
+        trend analytics) are unlocked through a one-time in-app purchase. The
+        purchase is processed by Google Play or the Apple App Store directly -
+        Petden never sees your payment details.
+      </p>
+
+      <h2 id="information-processed">2. Information the app processes</h2>
+      <p>
+        All of the items below are stored on your device only. None are
+        transmitted to us or to any third party.
+      </p>
+
+      <h3>2.1 Pet records</h3>
+      <p>
+        The pets you register, their vaccinations, medications, vet visits,
+        weight history, symptom logs, and reminders. Stored in an encrypted
+        SQLite database in Petden's private app storage.
+      </p>
+
+      <h3>2.2 Photos</h3>
+      <p>
+        If you attach photos to a pet profile or a vet visit, the photo files
+        are stored locally and only their paths are recorded in the database.
+        The photos are never uploaded.
+      </p>
+
+      <h3>2.3 PIN / biometric metadata</h3>
+      <p>
+        If you choose to lock the app, Petden stores a PBKDF2-HMAC-SHA256 hash
+        of your PIN plus a randomly generated salt in the platform's secure
+        storage (Android Keystore / iOS Keychain). The PIN itself is never
+        stored. Biometric data is owned by the operating system; Petden only
+        receives a yes/no answer.
+      </p>
+
+      <h3>2.4 Database encryption key</h3>
+      <p>
+        A 256-bit key is generated on first launch and stored in the platform's
+        secure storage. Without it, the database cannot be decrypted. We never
+        receive a copy.
+      </p>
+
+      <h3>2.5 Pro entitlement cache</h3>
+      <p>
+        After a successful in-app purchase, Petden writes a small flag to
+        secure storage so the app does not have to re-query the store on every
+        launch. The flag contains no personal data.
+      </p>
+
+      <h3>2.6 App preferences</h3>
+      <p>
+        Theme choice, lock timeout, onboarding completion status, and similar
+        settings. Stored in the same secure storage and in the app's private
+        preferences file.
+      </p>
+
+      <h2 id="permissions">3. Permissions and why we need them</h2>
+      <table>
+        <thead>
+          <tr><th>Permission</th><th>Why it is requested</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>POST_NOTIFICATIONS</code> (Android)</td><td>Show local reminder notifications you scheduled.</td></tr>
+          <tr><td><code>SCHEDULE_EXACT_ALARM</code> (Android 12+)</td><td>Fire reminder notifications at the exact configured time.</td></tr>
+          <tr><td><code>RECEIVE_BOOT_COMPLETED</code> (Android)</td><td>Re-arm scheduled reminders after a phone restart.</td></tr>
+          <tr><td><code>USE_BIOMETRIC</code> / <code>USE_FINGERPRINT</code></td><td>Authenticate the app lock with your device biometrics.</td></tr>
+          <tr><td>Camera (iOS / macOS prompt)</td><td>Used only if you take a photo from inside the app.</td></tr>
+          <tr><td>Photo Library (iOS)</td><td>Used only if you attach a photo to a pet record.</td></tr>
+        </tbody>
+      </table>
+      <p>
+        Petden does <strong>not</strong> request the <code>INTERNET</code>
+        permission on Android. You can verify this by extracting the published
+        APK with any free tool (for example,
+        <a href="https://apktool.org">apktool</a>) and inspecting
+        <code>AndroidManifest.xml</code>. The line
+        <code>&lt;uses-permission android:name="android.permission.INTERNET"/&gt;</code>
+        is absent. Without that declaration, the operating system refuses to
+        let the app open network sockets.
+      </p>
+      <p>
+        On macOS, the Release build is sandboxed and is not granted
+        <code>com.apple.security.network.client</code>. You can verify this
+        with:
+      </p>
+<pre><code>codesign -d --entitlements - /Applications/Petden.app</code></pre>
+
+      <h2 id="network-usage">4. Network usage</h2>
+      <p>
+        Petden does not make HTTP requests to our servers, to Google, to Apple,
+        or to any other host while running. The Android Release APK has no
+        <code>INTERNET</code> permission. The macOS Release <code>.app</code>
+        has no network entitlement. The iOS Release ships without any
+        analytics, attribution, or telemetry SDK that could initiate a network
+        request.
+      </p>
+      <p>The only network-adjacent operations the app supports are:</p>
+      <ul>
+        <li>
+          <strong>In-app purchase:</strong> handled entirely by Google Play
+          Billing or Apple StoreKit. Petden hands the purchase request to the
+          operating system and reads back the success / failure result. We
+          have no custom receipt-validation server.
+        </li>
+        <li>
+          <strong>Backup file selection (Pro feature):</strong> when you tap
+          "Export encrypted backup", Petden writes a passphrase-encrypted ZIP
+          and uses the platform file picker (Storage Access Framework on
+          Android, file picker on iOS / macOS) so you can save it wherever
+          you like — your Drive, your Dropbox, your local Files. The
+          destination is not chosen by Petden and the upload is performed by
+          the OS-level integration with that destination, not by us.
+        </li>
+      </ul>
+
+      <h2 id="third-parties">5. Third parties</h2>
+      <p>
+        Petden contains <strong>no analytics SDKs, no advertising SDKs, and no
+        crash-reporting SDKs</strong>. We do not use Google Firebase, Google
+        Analytics, Meta SDKs, AppsFlyer, Adjust, RevenueCat, Sentry, or any
+        similar service.
+      </p>
+      <p>
+        The app does include the platform in-app purchase plugin
+        (<code>in_app_purchase</code>) so the Pro upgrade can be purchased
+        through Google Play or Apple's App Store. That plugin only talks to
+        the platform store when you tap "Unlock Pro" or "Restore purchases".
+      </p>
+      <p>Open-source content bundled in the app:</p>
+      <ul>
+        <li><strong>Inter</strong> font, licensed under the SIL Open Font License 1.1.</li>
+        <li><strong>Geist</strong> font, licensed under the SIL Open Font License 1.1.</li>
+        <li><strong>Material Symbols</strong> icons, licensed under Apache 2.0.</li>
+      </ul>
+      <p>None of these involve a network call — the assets are bundled at build time.</p>
+
+      <h2 id="children">6. Children</h2>
+      <p>
+        Petden is not directed at children under 13. We do not knowingly
+        collect data from children, because we do not collect data from anyone.
+      </p>
+
+      <h2 id="retention">7. Data retention and deletion</h2>
+      <p>Because all data is stored only on your device:</p>
+      <ul>
+        <li>
+          <strong>You can delete it at any time.</strong> Settings → Privacy &amp;
+          security → "Erase all data" wipes the entire encrypted database and
+          the encryption key. The action is irreversible.
+        </li>
+        <li>
+          <strong>Uninstalling the app removes everything</strong> — pet
+          records, photos, reminders, lock setup, and the Pro entitlement
+          cache.
+        </li>
+        <li>
+          We have no remote copy of your data because we never receive it.
+        </li>
+      </ul>
+      <p>
+        If you have purchased Pro and reinstall the app, "Restore purchases"
+        on the paywall will re-fetch your entitlement from Google Play or
+        Apple's App Store. Petden does not retain any record of who purchased
+        what.
+      </p>
+
+      <h2 id="security">8. Security</h2>
+      <p>
+        The local database is encrypted at rest using SQLCipher (AES-256). The
+        encryption key is held only in your device's secure storage (Android
+        Keystore / iOS Keychain). The app sandbox prevents other apps on your
+        phone from reading the file.
+      </p>
+      <p>
+        Encrypted backups (Pro) use WinZip AES-256 with PBKDF2 key derivation
+        from your chosen passphrase. The passphrase is the only way to decrypt
+        the backup. If you forget it, the backup is unrecoverable — by design.
+      </p>
+      <p>
+        Because nothing is transmitted, there is no "in-transit" data to
+        encrypt.
+      </p>
+
+      <h2 id="your-rights">9. Your rights</h2>
+      <p>
+        Since we hold no personal data about you, the GDPR / DPDP / CCPA right
+        to access, correct, port, or delete your data is satisfied by
+        controlling the data on your own device. Uninstalling Petden fulfils
+        the right to erasure in full.
+      </p>
+
+      <h2 id="sensitive">10. Sensitive data, children's data, financial data</h2>
+      <p>Petden does not handle any of the following:</p>
+      <ul>
+        <li>Children's data (the app is not directed at children).</li>
+        <li>Human medical data — Petden tracks pets only.</li>
+        <li>
+          Government or biometric IDs (biometric authentication uses the OS;
+          we never see the template).
+        </li>
+        <li>
+          Financial or payment data (handled entirely by Google Play / Apple
+          StoreKit).
+        </li>
+        <li>
+          SMS, call logs, contacts, location, or media beyond photos you
+          explicitly attach to a pet record.
+        </li>
+      </ul>
+
+      <h2 id="changes">11. Changes to this policy</h2>
+      <p>
+        If this policy materially changes, the <strong>Last updated</strong>
+        date above will move forward and the change will be summarised in the
+        app's release notes on Google Play and the App Store. Continued use of
+        the app after a change means you accept the updated policy.
+      </p>
+
+      <div class="contact">
+        <h2 id="contact" style="border:0;">12. Contact</h2>
+        <p>For privacy questions or concerns, email:</p>
+        <a class="contact-email" href="mailto:vivekyadav36837@gmail.com">vivekyadav36837@gmail.com</a>
+        <p style="margin-top:14px; font-size:14px;">
+          We aim to respond within 7 working days. For bugs and feature
+          requests, please open an issue at
+          <a href="https://github.com/vivekyd6/petden-public/issues">github.com/vivekyd6/petden-public/issues</a>.
+        </p>
+      </div>
+
+    </section>
+  </article>
+
+  <footer>
+    Petden &middot; Privacy-first pet health tracker.
+  </footer>
+</main>
+</body>
+</html>

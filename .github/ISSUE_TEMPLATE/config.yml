@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: mailto:petden.support@gmail.com
+    about: Don't report security issues publicly. Email Petden support; we'll respond privately.
+  - name: Refund request
+    url: mailto:petden.support@gmail.com
+    about: For refunds outside the Play Store / App Store 48-hour auto-refund window, email Petden support.
+  - name: How to verify Petden's privacy claims
+    url: https://vivekyd6.github.io/petden-public/
+    about: Read the privacy policy and verification steps before filing a privacy issue.
